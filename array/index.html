@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Array and String Methods</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>JavaScript Array and String Methods</h1>
+    <p>Explore various JavaScript methods through interactive cards!</p>
+  </header>
+
+  <div class="card-container">
+    <!-- Array Methods Cards -->
+    <div class="card">
+      <h2>Array.length</h2>
+      <p>Returns the number of elements in an array.</p>
+      <pre><code>let arr = [1, 2, 3].length;</code></pre>
+      <button onclick="displayArrayResult('length')">Show Result</button>
+      <p id="result-length" class="result"></p>
+    </div>
+
+    <div class="card">
+      <h2>Array.toString()</h2>
+      <p>Converts the array to a comma-separated string.</p>
+      <pre><code>let arr = [1, 2, 3].toString();</code></pre>
+      <button onclick="displayArrayResult('toString')">Show Result</button>
+      <p id="result-toString" class="result"></p>
+    </div>
+
+    <div class="card">
+      <h2>Array.at()</h2>
+      <p>Returns the element at the specified index.</p>
+      <pre><code>let element = [1, 2, 3].at(1);</code></pre>
+      <button onclick="displayArrayResult('at')">Show Result</button>
+      <p id="result-at" class="result"></p>
+    </div>
+
+    <div class="card">
+      <h2>Array.join()</h2>
+      <p>Joins array elements into a string, separated by a specified separator.</p>
+      <pre><code>let joined = [1, 2, 3].join(" - ");</code></pre>
+      <button onclick="displayArrayResult('join')">Show Result</button>
+      <p id="result-join" class="result"></p>
+    </div>
+
+    <div class="card">
+      <h2>Array.pop()</h2>
+      <p>Removes the last element from an array.</p>
+      <pre><code>let arr = [1, 2, 3]; arr.pop();</code></pre>
+      <button onclick="displayArrayResult('pop')">Show Result</button>
+      <p id="result-pop" class="result"></p>
+    </div>
+
+    <div class="card">
+      <h2>Array.push()</h2>
+      <p>Adds a new element to the end of an array.</p>
+      <pre><code>let arr = [1, 2]; arr.push(3);</code></pre>
+      <button onclick="displayArrayResult('push')">Show Result</button>
+      <p id="result-push" class="result"></p>
+    </div>
+
+    <!-- String Methods Cards -->
+<div class="card">
+  <h2>String.charCodeAt()</h2>
+  <p>Returns the Unicode of the character at a specified index.</p>
+  <pre><code>let code = "hello".charCodeAt(1);</code></pre>
+  <button onclick="displayStringResult('charCodeAt')">Show Result</button>
+  <p id="result-charCodeAt" class="result"></p>
+</div>
+
+<div class="card">
+  <h2>String.at()</h2>
+  <p>Returns the character at a specified index using the at() method.</p>
+  <pre><code>let char = "hello".at(1);</code></pre>
+  <button onclick="displayStringResult('at')">Show Result</button>
+  <p id="result-at" class="result"></p>
+</div>
+
+<div class="card">
+  <h2>String [ ]</h2>
+  <p>Accesses characters in a string using bracket notation.</p>
+  <pre><code>let char = "hello"[1];</code></pre>
+  <button onclick="displayStringResult('bracketNotation')">Show Result</button>
+  <p id="result-bracketNotation" class="result"></p>
+</div>
+
+<div class="card">
+  <h2>String.slice()</h2>
+  <p>Extracts a part of a string and returns it as a new string.</p>
+  <pre><code>let part = "hello".slice(1, 4);</code></pre>
+  <button onclick="displayStringResult('slice')">Show Result</button>
+  <p id="result-slice" class="result"></p>
+</div>
+
+<div class="card">
+  <h2>String.substring()</h2>
+  <p>Extracts characters between two specified indices.</p>
+  <pre><code>let part = "hello".substring(1, 4);</code></pre>
+  <button onclick="displayStringResult('substring')">Show Result</button>
+  <p id="result-substring" class="result"></p>
+</div>
+
+<div class="card">
+  <h2>String.substr()</h2>
+  <p>Extracts a part of a string, beginning at a specified index and of a specified length.</p>
+  <pre><code>let part = "hello".substr(1, 3);</code></pre>
+  <button onclick="displayStringResult('substr')">Show Result</button>
+  <p id="result-substr" class="result"></p>
+</div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
